@@ -112,7 +112,7 @@
     .p3{width:3px;height:3px;background:var(--em3); left:30%;top:35%;animation-duration:8s; animation-delay:2s;}
     .p4{width:2px;height:2px;background:var(--em);  left:48%;top:75%;animation-duration:10s;animation-delay:.5s;}
     .p5{width:3px;height:3px;background:var(--gold);left:64%;top:18%;animation-duration:7.5s;animation-delay:3s;}
-    .p6{width:2px;height:2px;background:var(--em2); left:76%;top:80%;animation-duration:9s; animation-delay:1s;}
+    .p6{width:2px;height:2px;background:var(--em2); left:76%;top:80%;animation-duration:9s; animation-delay:1.5s;}
     .p7{width:3px;height:3px;background:var(--em3); left:87%;top:44%;animation-duration:8s; animation-delay:2.5s;}
     .p8{width:2px;height:2px;background:var(--gold);left:94%;top:28%;animation-duration:10s;animation-delay:0s;}
     @keyframes pUp {
@@ -302,7 +302,7 @@
     .sv-e { color:var(--em); }
     .sv-g { color:var(--gold); }
     .sv-w { color:#fff; }
-    .sc-l font-size:7.5px; font-weight:700; color:rgba(255,255,255,.25); text-transform:uppercase; letter-spacing:.1em; margin-top:2px; }
+    .sc-l { font-size:7.5px; font-weight:700; color:rgba(255,255,255,.25); text-transform:uppercase; letter-spacing:.1em; margin-top:2px; }
 
     /* ── INFO ROW ── */
     .info-row {
@@ -471,6 +471,142 @@
       .inst { padding:9px 5px; border-radius:10px; }
       .inst-icon { font-size:17px; margin-bottom:3px; }
       .inst-lbl { font-size:8.5px; }
+
+      .stats-row { max-width:420px; margin-top:13px; border-radius:13px; }
+      .sc { padding:11px 8px; }
+      .sc-v { font-size:22px; }
+      .sc-l { font-size:8.5px; margin-top:3px; }
+
+      .info-row { margin-top:12px; gap:14px; }
+      .info-item { font-size:11px; }
+
+      .cta-wrap { max-width:420px; margin-top:15px; }
+      .btn { font-size:15px; padding:16px 34px; letter-spacing:.1em; border-radius:12px; }
+    }
+
+    @media (min-width:1200px) {
+      .logo-outer { width:134px; height:134px; }
+      h1 { font-size:48px; }
+      .sebi-banner,.inst-grid,.stats-row,.cta-wrap { max-width:480px; }
     }
   </style>
-</h
+</head>
+<body>
+
+  <!-- SEBI top bar -->
+  <div class="sebi-bar">
+    <div class="sebi-dot"></div>
+    <span class="sebi-bar-txt">✦ India's Top SEBI Registered Research Analyst ✦</span>
+    <div class="sebi-dot"></div>
+  </div>
+  <div class="green-line"></div>
+
+  <div class="bg"></div>
+  <div class="diag"></div>
+  <div class="texture"></div>
+  <div class="scan"></div>
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+  <div class="orb orb3"></div>
+  <div class="particles">
+    <div class="p p1"></div><div class="p p2"></div><div class="p p3"></div>
+    <div class="p p4"></div><div class="p p5"></div><div class="p p6"></div>
+    <div class="p p7"></div><div class="p p8"></div>
+  </div>
+
+  <main class="page">
+
+    <!-- Header (no link) -->
+    <div class="hdr">
+      <div class="hdr-line"></div>
+      <div class="hdr-txt">📈 &nbsp; TRADER HAJI SULTAN &nbsp; 📈</div>
+      <div class="hdr-line"></div>
+    </div>
+
+    <!-- Logo — LINKED -->
+    <a href="https://t.me/+Hyavvnik96JjNWE9" target="_blank" rel="noopener" class="logo-link">
+      <div class="logo-section">
+        <div class="logo-outer">
+          <div class="lr1"></div>
+          <div class="lr2"></div>
+          <div class="lr3"></div>
+          <div class="l-img">
+            <img
+              src="https://i.ibb.co/8DzMVCGG/ay-HHx9p-S7-Wfw2x2mw-APy57-HHa7-SZh6-Y96faxi-FDs-Kf-DGYVJf8dnb-4-Sqn-MKXz-W4xn-STUMF7-v-SNwpgb-Uo-Yv-MJWJ.jpg"
+              alt="TRADER HAJI SULTAN"
+              onerror="this.style.display='none';this.parentElement.style.background='#0a1f14';this.parentElement.innerHTML='<span style=\'font-family:Poppins,sans-serif;font-size:20px;color:#10b981;font-weight:800\'>MA</span>'"
+            />
+          </div>
+          <div class="ldot ld1"></div>
+          <div class="ldot ld2"></div>
+          <div class="ldot ld3"></div>
+          <div class="ldot ld4"></div>
+          <div class="sebi-badge">✓</div>
+        </div>
+        <div class="name-row">
+          <div class="nr-line nl1"></div>
+          <span class="nr-txt">TRADER HAJI SULTAN</span>
+          <div class="nr-line nl2"></div>
+        </div>
+      </div>
+    </a>
+
+    <!-- Title (no link) -->
+    <div class="title-wrap">
+      <div class="pre-lbl">— SEBI Registered Research Analyst —</div>
+      <h1>TRADER HAJI  <span class="em"></span> <span class="gld">SULTAN</span></h1>
+      <p class="tagline">
+        <span class="hi">India's Top SEBI Analyst</span> · 60K+ Members 🇮🇳<br/>
+        <span class="hi2">Expert Calls</span> · Banknifty · Nifty · Finnifty · More
+      </p>
+    </div>
+
+   
+
+    <!-- Instruments Grid (no link) -->
+    <div class="inst-grid">
+      <div class="inst"><span class="inst-icon">📊</span><span class="inst-lbl">Bank<br/>Nifty</span></div>
+      <div class="inst"><span class="inst-icon">📈</span><span class="inst-lbl">Nifty<br/>50</span></div>
+      <div class="inst"><span class="inst-icon">💹</span><span class="inst-lbl">Finn<br/>Nifty</span></div>
+      <div class="inst"><span class="inst-icon">🏦</span><span class="inst-lbl">Sen<br/>sex</span></div>
+    
+    </div>
+<style>
+  html, body {
+    overscroll-behavior-y: contain; /* Browser ke default pull-down refresh ko disable karta hai */
+  }
+</style>
+    <!-- Stats (no link) -->
+    <div class="stats-row">
+      <div class="sc"><div class="sc-v sv-e">60K+</div><div class="sc-l">Members</div></div>
+      <div class="sc"><div class="sc-v sv-g">SEBI</div><div class="sc-l">Registered</div></div>
+      <div class="sc"><div class="sc-v sv-w">FREE</div><div class="sc-l">To Join</div></div>
+    </div>
+
+    <!-- Info (no link) -->
+    <div class="info-row">
+      <div class="info-item">✅ SEBI Verified</div>
+      <div class="info-sep"></div>
+      <div class="info-item">📊 8 Instruments</div>
+      <div class="info-sep"></div>
+      <div class="info-item">🇮🇳 India #1</div>
+    </div>
+
+    <!-- CTA — LINKED -->
+    <div class="cta-wrap">
+      <a href="https://t.me/+Hyavvnik96JjNWE9" target="_blank" rel="noopener" class="btn">
+        <span class="btn-inner">
+          <svg class="tg" viewBox="0 0 24 24" fill="none">
+            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.069l-2.04 9.608c-.15.673-.546.837-1.107.52l-3.062-2.255-1.478 1.423c-.164.164-.3.3-.615.3l.219-3.108 5.655-5.108c.246-.218-.053-.34-.38-.12L7.27 14.078l-3.013-.94c-.655-.204-.668-.655.137-.969l11.753-4.53c.546-.2 1.024.133.847.93l-.432-.5z"/>
+          </svg>
+          Join FOR — Free
+        </span>
+      </a>
+    </div>
+
+  </main>
+
+  <p class="credit">Ads by <a href="https://t.me/+rueXSRWaGdE4YmY1" target="_blank" rel="noopener">AD CRAFT AGENCY</a></p>
+
+</body>
+</html>
