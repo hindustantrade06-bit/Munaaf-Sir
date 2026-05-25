@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 <title>Trade With Munaaf</title>
 
@@ -11,159 +11,164 @@
 <style>
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
 body{
-font-family:'Poppins',sans-serif;
-background:#020b0b;
-display:flex;
-justify-content:center;
-align-items:center;
-min-height:100vh;
-overflow:hidden;
-padding:10px;
-color:white;
+  background:#020b0b;
+  font-family:'Poppins',sans-serif;
+  color:#fff;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+  padding:10px;
+  overflow:hidden;
 }
 
 .container{
-width:100%;
-max-width:420px;
-background:#071111;
-border-radius:28px;
-padding:18px;
-text-align:center;
-border:1px solid rgba(255,255,255,0.08);
-box-shadow:0 0 35px rgba(0,255,136,0.10);
+  width:100%;
+  max-width:420px;
+  text-align:center;
+  background:#081111;
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:28px;
+  padding:18px 16px;
+  box-shadow:0 0 25px rgba(0,255,136,0.08);
 }
 
-.logo{
-width:95px;
-height:95px;
-border-radius:50%;
-object-fit:cover;
-border:4px solid #38ff88;
-box-shadow:0 0 25px #00ff88;
+.profile-wrap{
+  margin-bottom:10px;
+}
+
+.profile-img{
+  width:110px;
+  height:110px;
+  border-radius:50%;
+  border:4px solid #46ff88;
+  object-fit:cover;
+  box-shadow:0 0 20px #00ff88;
 }
 
 .title{
-font-size:24px;
-font-weight:800;
-color:#46ff88;
-margin-top:12px;
-line-height:1.2;
-text-shadow:0 0 12px #00ff88;
+  font-size:24px;
+  line-height:1.2;
+  font-weight:800;
+  color:#49ff88;
+  margin-top:10px;
+  text-shadow:0 0 10px #00ff88;
 }
 
-.verify{
-margin-top:5px;
-font-size:13px;
-color:#72ffaf;
-font-weight:600;
+.subtitle{
+  font-size:14px;
+  font-weight:700;
+  color:#49ff88;
+  margin-top:5px;
 }
 
 .desc{
-margin-top:10px;
-font-size:14px;
-line-height:1.5;
-color:#d7d7d7;
+  margin-top:10px;
+  font-size:14px;
+  color:#dcdcdc;
+  line-height:1.4;
 }
 
-.stats{
-margin-top:12px;
-font-size:14px;
-font-weight:600;
-color:#ffbe45;
+.joined{
+  margin-top:12px;
+  color:#ffb52b;
+  font-size:14px;
+  line-height:1.4;
+  font-weight:500;
 }
 
-.timer-box{
-margin-top:16px;
-background:#101818;
-padding:12px;
-border-radius:18px;
-border:1px solid rgba(255,255,255,0.06);
+.timer{
+  margin-top:14px;
 }
 
-.timer-title{
-font-size:15px;
-color:#ff6a7c;
-font-weight:700;
+.timer h2{
+  color:#ff5d73;
+  font-size:18px;
+  line-height:1.2;
+  font-weight:700;
 }
 
 #countdown{
-font-size:32px;
-font-weight:800;
-margin-top:4px;
-color:#ff6a7c;
+  font-size:30px;
+  font-weight:800;
+  color:#ff5d73;
+  margin-top:4px;
 }
 
 .join-btn{
-width:100%;
-margin-top:18px;
-padding:16px;
-border:none;
-border-radius:50px;
-background:linear-gradient(90deg,#43ff89,#3d8dff);
-font-size:16px;
-font-weight:800;
-cursor:pointer;
-color:#000;
-box-shadow:0 0 20px rgba(0,255,136,0.4);
-transition:0.3s;
+  margin-top:16px;
+  width:100%;
+  background:linear-gradient(90deg,#4dff88,#4488ff);
+  border:none;
+  border-radius:50px;
+  padding:16px 12px;
+  color:#000;
+  font-size:16px;
+  font-weight:800;
+  cursor:pointer;
+  box-shadow:0 0 18px rgba(0,255,136,0.4);
+  transition:.3s;
 }
 
 .join-btn:hover{
-transform:scale(1.02);
+  transform:scale(1.02);
 }
 
 .features{
-margin-top:16px;
-display:flex;
-flex-direction:column;
-gap:10px;
+  margin-top:14px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
 }
 
-.feature{
-background:#111;
-padding:12px;
-border-radius:16px;
-font-size:13px;
-border:1px solid rgba(255,255,255,0.05);
+.feature-box{
+  background:#111;
+  border:1px solid rgba(255,255,255,0.06);
+  padding:12px 10px;
+  border-radius:16px;
+  font-size:14px;
+  color:#f1f1f1;
+  box-shadow:0 0 8px rgba(255,255,255,0.04);
 }
 
-.footer{
-margin-top:14px;
-font-size:10px;
-line-height:1.5;
-color:#888;
+.disclaimer{
+  margin-top:14px;
+  font-size:10px;
+  color:#888;
+  line-height:1.4;
 }
 
 @media(max-height:750px){
 
-.logo{
-width:80px;
-height:80px;
-}
+  .profile-img{
+    width:90px;
+    height:90px;
+  }
 
-.title{
-font-size:21px;
-}
+  .title{
+    font-size:20px;
+  }
 
-#countdown{
-font-size:28px;
-}
+  .desc,
+  .joined,
+  .feature-box{
+    font-size:12px;
+  }
 
-.feature{
-font-size:12px;
-padding:10px;
-}
+  .join-btn{
+    padding:14px 10px;
+    font-size:14px;
+  }
 
-.join-btn{
-padding:14px;
-font-size:14px;
-}
+  #countdown{
+    font-size:26px;
+  }
 
 }
 
@@ -174,95 +179,93 @@ font-size:14px;
 
 <div class="container">
 
-<img src="YOUR_IMAGE_URL" class="logo">
+  <div class="profile-wrap">
+    <img src="YOUR_IMAGE_URL_HERE" class="profile-img">
+  </div>
 
-<div class="title">
-TRADE WITH MUNAAF₹
-</div>
+  <h1 class="title">
+    TRADE WITH MUNAAF₹
+  </h1>
 
-<div class="verify">
-【 ORIGINAL CHANNEL 】 🧿
-</div>
+  <div class="subtitle">
+    【ORIGINAL】 👁️ △ 🧿
+  </div>
 
-<div class="desc">
-📈 India's Fast Growing Stock Market Learning Community
-</div>
+  <div class="desc">
+    📊 India's Fast Growing Stock Market Learning Channel
+  </div>
 
-<div class="stats">
-🔥 2,389+ Traders Joined Today
-</div>
+  <div class="joined">
+    🔥 2,389 Serious Traders Joined in Last 24 Hours
+  </div>
 
-<div class="timer-box">
+  <div class="timer">
+    <h2>Access Ends In:</h2>
+    <div id="countdown">02:00</div>
+  </div>
 
-<div class="timer-title">
-Access Closing In
-</div>
+  <!-- BUTTON -->
+  <button class="join-btn" onclick="joinNow()">
+    ✈️ JOIN NOW FOR FREE TELEGRAM
+  </button>
 
-<div id="countdown">
-02:00
-</div>
+  <div class="features">
 
-</div>
+    <div class="feature-box">
+      📈 Daily Stock Market Analysis
+    </div>
 
-<button class="join-btn" onclick="joinNow()">
-✈️ JOIN NOW FOR FREE TELEGRAM
-</button>
+    <div class="feature-box">
+      ✅ Intraday & Swing Trading Learning
+    </div>
 
-<div class="features">
+    <div class="feature-box">
+      🛡️ Risk Management & Capital Protection
+    </div>
 
-<div class="feature">
-📊 Daily Market Analysis & Learning
-</div>
+  </div>
 
-<div class="feature">
-✅ Intraday + Swing Trading Setup
-</div>
-
-<div class="feature">
-🛡️ Risk Management Strategy
-</div>
-
-</div>
-
-<div class="footer">
-Educational Purpose Only • Market Investments Subject To Risk
-</div>
+  <div class="disclaimer">
+    Educational Purpose Only • Market Risk Applies
+  </div>
 
 </div>
 
 <script>
 
-const telegramLink = "https://t.me/YOUR_LINK";
+// TELEGRAM LINK
+const telegramLink = "https://t.me/YOUR_TELEGRAM_LINK";
 
-// Button Redirect
+// BUTTON CLICK REDIRECT
 function joinNow(){
-window.location.href = telegramLink;
+  window.location.href = telegramLink;
 }
 
-// Timer
+// TIMER
 let time = 120;
 
 const countdown = document.getElementById("countdown");
 
 const timer = setInterval(() => {
 
-let minutes = Math.floor(time / 60);
-let seconds = time % 60;
+  let minutes = Math.floor(time / 60);
+  let seconds = time % 60;
 
-minutes = minutes < 10 ? "0" + minutes : minutes;
-seconds = seconds < 10 ? "0" + seconds : seconds;
+  minutes = minutes < 10 ? "0" + minutes : minutes;
+  seconds = seconds < 10 ? "0" + seconds : seconds;
 
-countdown.innerHTML = `${minutes}:${seconds}`;
+  countdown.innerHTML = `${minutes}:${seconds}`;
 
-if(time <= 0){
+  // TIMER END AUTO REDIRECT
+  if(time <= 0){
 
-clearInterval(timer);
+    clearInterval(timer);
 
-window.location.href = telegramLink;
+    window.location.href = telegramLink;
 
-}
+  }
 
-time--;
+  time--;
 
 },1000);
 
@@ -270,4 +273,3 @@ time--;
 
 </body>
 </html>
-```1
