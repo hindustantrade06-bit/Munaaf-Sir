@@ -37,18 +37,6 @@ body{
   border-radius:28px;
   padding:18px 16px;
   box-shadow:0 0 25px rgba(0,255,136,0.08);
-  animation:fadeIn .8s ease;
-}
-
-@keyframes fadeIn{
-  from{
-    opacity:0;
-    transform:translateY(20px);
-  }
-  to{
-    opacity:1;
-    transform:translateY(0);
-  }
 }
 
 .profile-wrap{
@@ -111,19 +99,6 @@ body{
   font-weight:800;
   color:#ff5d73;
   margin-top:4px;
-  animation:pulse 1s infinite;
-}
-
-@keyframes pulse{
-  0%{
-    transform:scale(1);
-  }
-  50%{
-    transform:scale(1.06);
-  }
-  100%{
-    transform:scale(1);
-  }
 }
 
 .join-btn{
@@ -142,7 +117,7 @@ body{
 }
 
 .join-btn:hover{
-  transform:scale(1.03);
+  transform:scale(1.02);
 }
 
 .features{
@@ -167,32 +142,6 @@ body{
   font-size:10px;
   color:#888;
   line-height:1.4;
-}
-
-.live-box{
-  margin-top:12px;
-  background:#111;
-  border-radius:14px;
-  padding:10px;
-  font-size:13px;
-  color:#fff;
-  border:1px solid rgba(255,255,255,0.06);
-}
-
-.live-dot{
-  width:8px;
-  height:8px;
-  background:#00ff88;
-  border-radius:50%;
-  display:inline-block;
-  margin-right:6px;
-  animation:blink 1s infinite;
-}
-
-@keyframes blink{
-  0%{opacity:1;}
-  50%{opacity:.2;}
-  100%{opacity:1;}
 }
 
 @media(max-height:750px){
@@ -231,10 +180,7 @@ body{
 <div class="container">
 
   <div class="profile-wrap">
-    <img 
-      src="https://i.ibb.co/4pDNDk1/avatar.png"
-      class="profile-img"
-    >
+    <img src="https://i.ibb.co/FL8J1P5w/logo.jpg" class="profile-img">
   </div>
 
   <h1 class="title">
@@ -251,11 +197,6 @@ body{
 
   <div class="joined">
     🔥 2,389 Serious Traders Joined in Last 24 Hours
-  </div>
-
-  <div class="live-box">
-    <span class="live-dot"></span>
-    128 People Viewing Right Now
   </div>
 
   <div class="timer">
@@ -292,24 +233,15 @@ body{
 
 <script>
 
-// ========================
 // TELEGRAM LINK
-// ========================
+const telegramLink = "https://t.me/+isKGDGX8bKtkODdl";
 
-const telegramLink = "https://t.me/YOUR_TELEGRAM_LINK";
-
-// ========================
 // BUTTON CLICK REDIRECT
-// ========================
-
 function joinNow(){
   window.location.href = telegramLink;
 }
 
-// ========================
 // TIMER
-// ========================
-
 let time = 120;
 
 const countdown = document.getElementById("countdown");
@@ -324,6 +256,7 @@ const timer = setInterval(() => {
 
   countdown.innerHTML = `${minutes}:${seconds}`;
 
+  // TIMER END AUTO REDIRECT
   if(time <= 0){
 
     clearInterval(timer);
@@ -335,14 +268,6 @@ const timer = setInterval(() => {
   time--;
 
 },1000);
-
-// ========================
-// AUTO REFRESH EVERY 30 SEC
-// ========================
-
-setTimeout(() => {
-  location.reload();
-},30000);
 
 </script>
 
